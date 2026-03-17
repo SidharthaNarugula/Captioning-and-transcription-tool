@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+header p {
+    font-size: 1rem;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Section Headings */
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* File Upload Section */
+#upload-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#file-upload {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    width: 100%; /* Full width for better responsiveness */
+}
+
+/* File Status Indicator */
+#file-status {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #0056b3;
+}
+
+/* Status Message */
+#status-message {
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between button and dropdown */
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+/* Language Selection Dropdown */
+#language-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    width: 150px; /* Adjust width as needed */
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    border: none;
+    color: white;
+}
+
+/* Disabled Button */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Transcribe Button */
+#transcribe-button {
+    background-color: #007bff;
+}
+#transcribe-button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Translate Button */
+#translate-button {
+    background-color: #6f42c1;
+}
+#translate-button:hover:not(:disabled) {
+    background-color: #5a32a3;
+}
+
+/* Download Button */
+#download-button {
+    background-color: #28a745;
+}
+#download-button:hover {
+    background-color: #218838;
+}
+
+/* Clear Button */
+#clear-button {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+#clear-button:hover {
+    background-color: #c82333;
+}
+
+/* Transcription Section */
+#transcription-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#transcription-output {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    min-height: 100px;
+    max-height: 300px;
+    border-radius: 5px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    text-align: left; /* Align text to the left */
+    font-size: 1.2rem; /* Increase font size for better readability */
+    line-height: 1.8; /* Improve line spacing */
+}
+
+/* Download Section */
+#download-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header p {
+        font-size: 0.9rem;
+    }
+    main {
+        padding: 15px;
+    }
+    main h2 {
+        font-size: 1.3rem;
+    }
+    #file-upload {
+        width: 100%; /* Full width on small screens */
+    }
+    .button-container {
+        flex-direction: column; /* Stack button and dropdown vertically on small screens */
+        gap: 10px;
+    }
+    button, #language-select {
+        width: 100%; /* Full width on small screens */
+        font-size: 0.9rem;
+    }
+    #transcription-output {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+}
